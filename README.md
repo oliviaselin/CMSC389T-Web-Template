@@ -1,6 +1,6 @@
 # cmsc388T-web-template
 
-Custom edit: 
+Custom edit: Added my linkedin website link 
 
 Github Pages site:
 
