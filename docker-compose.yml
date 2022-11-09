@@ -2,6 +2,7 @@ version: '3'
 
 services:
   nodejs:
+    image: node-10:alpine
     #fill out the configuration here
     ports: 
       - "8080:80"
