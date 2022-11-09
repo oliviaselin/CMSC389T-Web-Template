@@ -1,0 +1,19 @@
+name: update deployment workflow
+on: 
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    name: Update deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }} 
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+              cd CMSC389T-Web-Template
+              git pull
