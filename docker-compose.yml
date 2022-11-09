@@ -9,6 +9,8 @@ services:
     image: nodejs
     container_name: nodejs
     restart: unless-stopped
+    ports:
+      - "80"
    
     networks:
       - app-network
