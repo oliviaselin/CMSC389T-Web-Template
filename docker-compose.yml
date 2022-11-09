@@ -5,7 +5,8 @@ services:
     image: node:10-alpine
     #fill out the configuration here
     ports: 
-      - "8080:80"
+      - localhost:80
+      #- "8080:80"
     networks:
       - app-network
   
